@@ -1,0 +1,294 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'EB Garamond', serif;
+}
+
+body {
+	font-size: 16px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #000000;
+	
+}
+@font-face {
+	font-family: 'Orator Std';
+	src: url('assets/fonts/OraterStd.otf');
+}
+
+#about-content {
+	float: left;
+}
+
+.container {
+	margin: 0 auto;
+	float: left;
+	width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.header {
+	float: left;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	/* Main page background image */
+	background: url("assets/images/background.JPG") no-repeat center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-shadow: 2px 2px #000000;
+}
+
+h1 {
+	font-size: 128px;
+	text-align: center;
+	color: #ffffff;
+	letter-spacing: 12px;
+	line-height: 20vh;
+}
+h2 {
+	font-size: 64px;
+	text-align: center;
+	color: #ffffff;
+	letter-spacing: 15px;
+}
+
+.navi {
+	margin: 0 auto; 
+	width: 100%;
+	line-height: 40vh;
+	text-align: center;
+	padding-bottom: 100vh;
+}
+.icon {
+	margin-right: 5px;
+	display:inline-block;
+	height: 150px;
+	width: 150px;
+	line-height:150px;
+	border-radius: 50%;
+	text-shadow: 1px 1px #000000;
+	text-align:center;
+	color: #ffffff;
+	border: 7px solid #ffffff;
+	font-size: 150%;
+	float: center;
+	cursor: pointer; cursor: hand; 
+	/*
+	background-position: center;
+	background-size: 150px 150px; */
+}
+.back-icon {
+	cursor: pointer; cursor: hand; 
+}
+.icon:hover {
+	display:inline-block;
+	height: 150px;
+	width: 150px;
+	line-height:150px;
+	border-radius: 50%;
+	text-shadow: 1px 1px #000000;
+	background-color: rgba(0, 0, 0, 0.6);
+	text-align:center;
+	 border: 7px solid #ffffff;
+	color: #ffffff;
+	font-size: 150%;
+	float: center;
+	cursor: pointer; cursor: hand; 
+	/*
+	background-position: center;
+	background-size: 150px 150px; */
+}
+.small {
+	display: inline-block; 
+	width: 75px; 
+	height: 75px; 
+	line-height:75px; 
+	font-size: 100%;
+	border-radius: 50%; 
+	text-shadow: 1px 1px #000000;
+	text-align: center;
+	color: #ffffff; 
+	border: 5px solid #ffffff; 
+	right-padding: 10px;
+}
+.small:hover {
+	display: inline-block; 
+	width: 75px; 
+	height: 75px; 
+	line-height:75px; 
+	font-size: 100%;
+	border-radius: 50%; 
+	text-shadow: 1px 1px #000000;
+	text-align: center;
+	color: #ffffff; 
+	border: 5px solid #ffffff; 
+	right-padding: 10px;
+	background-color: rgba(1, 1, 1, 0.2);
+}
+.section {
+	float: left;
+	text-align: center;
+	width: 100%;
+	background-color: #000000;
+	color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.content {
+	font-size: 16pt;
+	padding-left: 25%;
+	padding-right: 25%;
+	padding-bottom: 15%;
+	
+}
+
+/* unvisited link */
+a:link {
+    color: rgba(100, 100, 255, 1);
+    cursor: pointer; cursor: hand; 
+}
+
+/* visited link */
+a:visited {
+    color: rgba(100, 100, 255, 1);
+    cursor: pointer; cursor: hand; 
+}
+
+/* mouse over link */
+a:hover {
+    color: rgba(255, 100, 255, 1);
+    cursor: pointer; cursor: hand; 
+}
+
+/* selected link */
+a:active {
+    color: rgba(100, 100, 255, 1);
+    cursor: pointer; cursor: hand; 
+}
+#photo-slideshow { 
+    /*margin: 50px auto; */
+    position: relative; 
+    padding: 1px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+    width: 100%; 
+    height: 400px; 
+    float: left;
+}
+
+#photo-slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+#modeling-slideshow { 
+    /*margin: 50px auto; */
+    position: relative; 
+    padding: 1px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+    width: 100%; 
+    height: 400px; 
+    float: left;
+}
+
+#modeling-slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+#studies-slideshow { 
+    /*margin: 50px auto; */
+    position: relative; 
+    padding: 1px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+    width: 100%; 
+    height: 400px; 
+    float: left;
+}
+
+#studies-slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+#photo-image1 {
+<<<<<<< HEAD
+	background: url(assets/images/art/photo/IMG_3936.JPG) no-repeat center center;
+	background-size: cover;
+}
+#photo-image2 {
+	background: url(assets/images/art/photo/IMG_4687.JPG) no-repeat center center;
+=======
+	background: url(assets/images/Art/Photography/IMG_3936.JPG) no-repeat center center;
+	background-size: cover;
+}
+#photo-image2 {
+	background: url(assets/images/Art/Photography/IMG_4687.JPG) no-repeat center center;
+>>>>>>> ddc76f6a0d7a3e7e9d6ae7ffce3a4fdb4e340eca
+	background-size: cover;
+}
+
+#photo-image3 {
+<<<<<<< HEAD
+	background: url(assets/images/art/photo/IMG_2553.JPG) no-repeat center center;
+=======
+	background: url(assets/images/Art/Photography/IMG_2553.JPG) no-repeat center center;
+>>>>>>> ddc76f6a0d7a3e7e9d6ae7ffce3a4fdb4e340eca
+	background-size: cover;
+}
+
+#photo-image4 {
+<<<<<<< HEAD
+	background: url(assets/images/art/photo/IMG_5308.JPG) no-repeat center center;
+=======
+	background: url(assets/images/Art/Photography/IMG_5308.JPG) no-repeat center center;
+>>>>>>> ddc76f6a0d7a3e7e9d6ae7ffce3a4fdb4e340eca
+	background-size: cover;
+}
+
+#photo-image5 {
+<<<<<<< HEAD
+	background: url(assets/images/art/photo/IMG_5313.JPG) no-repeat center center;
+=======
+	background: url(assets/images/Art/Photography/IMG_5313.JPG) no-repeat center center;
+>>>>>>> ddc76f6a0d7a3e7e9d6ae7ffce3a4fdb4e340eca
+	background-size: cover;
+}
+
+#photo-image6 {
+<<<<<<< HEAD
+	background: url(assets/images/art/photo/IMG_5309.JPG) no-repeat center center;
+=======
+	background: url(assets/images/Art/Photography/IMG_5309.JPG) no-repeat center center;
+>>>>>>> ddc76f6a0d7a3e7e9d6ae7ffce3a4fdb4e340eca
+	background-size: cover;
+}
+
+#photo-image7 {
+<<<<<<< HEAD
+	background: url(assets/images/art/photo/IMG_5307.JPG) no-repeat center center;
+	background-size: cover;
+}
+#photo-image8 {
+	background: url(assets/images/art/photo/IMG_5314.JPG) no-repeat center center;
+	background-size: cover;
+}
+#photo-image9 {
+	background: url(assets/images/art/photo/IMG_5312.JPG) no-repeat center center;
+=======
+	background: url(assets/images/Art/Photography/IMG_5307.JPG) no-repeat center center;
+>>>>>>> ddc76f6a0d7a3e7e9d6ae7ffce3a4fdb4e340eca
+	background-size: cover;
+}
+.fill {
+
+}
+
+

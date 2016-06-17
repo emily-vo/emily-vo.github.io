@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="main.css"/>
+		<link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+		<title>
+		</title>
+		<meta charset="utf-8"/>
+		<script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js">
+		</script>
+		<script type="text/javascript" src="assets/scripts/scroll.js">
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1>emily vo</h1>
+				<div class="navi"> 		
+				<div class="icon about-icon">about</div>
+				<div class="icon art-icon">art</div>
+				<div class="icon code-icon">code</div>
+				<div class="icon contact-icon">contact</div>
+			</div>
+
+			<div class="section" id="about-section">
+				<h2>about</h2>
+				<div class="content" style="text-align:left" align="center" float="left">
+			 		<div id="about-content">
+			 			<h3> hi there </h3>
+				 			<p> I’m Emily, and I am an engineering student at the University of Pennsylvania. </p>
+			 			<div>
+			 				<!--
+			 				<div style = "width: 50%; float: left; display: inline-block; background: url("../assets/images/ProfileImage.jpg") no-repeat center center fixed; background-size: cover; background-repeat: no-repeat;">
+			 				<img src="../assets/images/ProfileImage.jpg" style="width: 80%; height: 80%; float: center" align="left"> 
+			 				</div>
+			 				 -->
+			 				<div style = "width: 44%; padding: 10px; float: left; display: inline-block;">	
+				 			<!-- <h3> background </h3> -->
+				 			<p> I am currently a junior, who has done coursework in Computer Science, Art, Graphics Programming, and Electrical Engineering. I am interested in all technology that changes how we experience and share visual information, entertainment, and the arts. 
+							</p>
+							<p> 
+				 			In my free time, I pursue my passion for art and design, and find ways to incorporate it into my programming projects. If you're interested in my CS work, you can view the source at my github <a href="https://github.com/emily-vo" target="_blank">here</a>!
+				 			</p> 
+			 	    		</div>
+
+			 				<div style = "width: 44%; height: 100%; padding: 10px; float: left; display: inline-block">
+			 				<h3> i like </h3>
+				 			<ul>
+							 	<li>Graphics and Game Programming</li>
+							 	<li>Algorithms and Data Structures</li>
+							 	<li>Art and Design</li>
+							 	<li>Robotics</li>
+						 	</ul>
+						 	<p> <br>I spent last summer as a Software Intern for Electronics R&D, at Siemens in Atlanta, GA, and am now a Software Intern at <a href="https://www.agi.com/" target="_blank">Analytical Graphics, Inc.</a> in Exton, PA.</p>	
+			 				</div>
+			 			</div>
+			 			<div style = "padding: 10px; float: left; display: inline-block">
+				 			<p> I hope you enjoy my portfolio website - I wanted to make it from scratch to learn some web-dev!</p>
+				 		</div>
+				 		<div style = "padding: 5px"> 
+				 		<div class="small back-icon" style="float:right">back</div>
+				 		<div class="small art-icon" style="float:right">next</div>
+				 		</div>
+			 		</div>
+				</div>
+			</div>
+
+			<div class="section" id = "art-section">
+				<h2>art</h2>
+				<div class="content" style="text-align:center">
+					<h3>photo</h3>
+					<div class="slideshow" id = "photo-slideshow">
+	   					<div class = "fill" id="photo-image1"></div>
+	   					<div class = "fill" id="photo-image2"></div> 
+	   					<div class = "fill" id="photo-image3"></div> 
+	   					<div class = "fill" id="photo-image4"></div> 
+	   					<div class = "fill" id="photo-image5"></div> 
+	   					<div class = "fill" id="photo-image6"></div> 
+	   					<div class = "fill" id="photo-image7"></div>
+	   					<div class = "fill" id="photo-image8"></div>
+	   					<div class = "fill" id="photo-image9"></div>
+					</div>
+					<h3>modeling</h3>
+					<div class="slideshow" id = "modeling-slideshow">
+	   					<div class = "fill" id="modeling-image1"></div>
+					</div>
+					<h3>studies</h3>
+					<div class="slideshow" id = "studies-slideshow">
+	   					<div class = "fill" id="studies-image1"></div>   					
+					</div>
+
+					<div style = "padding: 5px; width: 170px; float: right; text-align: right"> 
+						<div class="small back-icon" style="float:right; display:inline-block">back</div>
+				 		<div class="small code-icon" style="float:right; display:inline-block">next</div>
+				 	</div> 
+				</div>
+				
+			</div>
+
+			<div class="section" id="code-section" style="text-align:left">
+				<h2>code</h2>
+				<div class="content">
+					<p align="center">My source code for school projects exists on private repositories. If you want to see it, feel free to contact me!</p>
+					<div id = "minecraft-section" style="padding-top: 20px">
+						<p><h3 align="center">Mini Minecraft</h3>
+						This is a simplified version of Minecraft I built in C++ and the OpenGL API, alongside two teammates, Ricky Rajani and William Ho. The project was completed over the span of three weeks as a final project in Spring 2016, and was my first time building a game with advanced graphics techniques. <div style="font-size: 12pt; padding:10px" align="center"></div> </p> 
+						<div id="mini-minecraft"> 
+							<iframe src="https://www.youtube.com/embed/xSOeaph5jOE" frameborder="0" allowfullscreen style="width: 100%; height: 400px;float: center"></iframe>
+							<p><b>Role:</b>
+								<ul>
+									 <li>Co-Developer
+								 </ul> 
+							</p>
+							<p><b>Features Implemented:</b> 
+								<ul>
+									 <li>Octree Acceleration Structure and Visualization</li>
+									 <li>Physics Implementation</li>
+									 <li>Procedural Weather Generation</li>
+									 <li>Raytracing Intersections for Block Interaction</li>
+									 <li>Player Controls</li>
+								 </ul>
+							</p>
+						</div>
+					</div>
+					<div id="search-engine-section" style="padding-top: 20px">
+						<p><h3 align="center">Wikipedia Search Engine</h3>
+							This was a final project to exercise fundamental Graph Theory concepts and algorithms taught in my first Algorithms and Data Strucures class. The task at hand was to create a graph of Simple Wikipedia's pages and their outbound links, on which we performed various graph algorithms to observe various real-world applications, such as page rank, centrality, and connected components, and search ranking.
+						</p>
+
+						<div id="search-engine">
+							<p><b>Role:</b>
+								<ul>
+									<li>Solo Developer
+								</ul>
+							</p>
+							<p><b>Features Implemented:</b> 
+									<ul>
+										 <li>XML Dump File Parser with Graph Generation</li>
+										 <li>Dijkstra's, Non-Recursive Depth First Search, and Connected Components</li>
+										 <li>Centrality, Page Rank, Search Ranking</li>
+									 </ul>
+							</p>
+						</div>
+					</div>
+					<div style = "padding: 5px; width: 170px; float: right; text-align: right"> 
+						<div class="small back-icon" style="float:right; display:inline-block">back</div>
+				 		<div class="small code-icon" style="float:right; display:inline-block">next</div>
+				 	</div>
+				</div>
+
+				
+			</div>
+
+			<div class="section" id="contact-section" style="text-align: center">
+				<h2>contact</h2>
+				<div style="display: inline-block; width:200px; font-size: 16pt; padding-bottom:400px">
+					<p align = "center">looking forward to hearing from you!</p>
+					<div class = "small" align = "center"><a href= "mailto:emvo@seas.upenn.edu">email</a></div>
+					<div class = "small" align = "center"><a href= "">cv</a></div>
+					<div class = "small back-icon" align = "center">back</div>
+					<div class = "small" align = "center"><a href= "">linkedin</a></div>
+				</div>
+			</div>
+
+		</div>	
+	</body>
+</html>
