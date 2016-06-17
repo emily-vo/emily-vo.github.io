@@ -221,60 +221,34 @@ a:active {
     bottom: 10px; 
 }
 #photo-image1 {
-<<<<<<< HEAD
 	background: url(assets/images/art/photo/IMG_3936.JPG) no-repeat center center;
 	background-size: cover;
 }
 #photo-image2 {
 	background: url(assets/images/art/photo/IMG_4687.JPG) no-repeat center center;
-=======
-	background: url(assets/images/Art/Photography/IMG_3936.JPG) no-repeat center center;
 	background-size: cover;
 }
-#photo-image2 {
-	background: url(assets/images/Art/Photography/IMG_4687.JPG) no-repeat center center;
->>>>>>> ddc76f6a0d7a3e7e9d6ae7ffce3a4fdb4e340eca
-	background-size: cover;
-}
-
 #photo-image3 {
-<<<<<<< HEAD
 	background: url(assets/images/art/photo/IMG_2553.JPG) no-repeat center center;
-=======
-	background: url(assets/images/Art/Photography/IMG_2553.JPG) no-repeat center center;
->>>>>>> ddc76f6a0d7a3e7e9d6ae7ffce3a4fdb4e340eca
 	background-size: cover;
 }
 
 #photo-image4 {
-<<<<<<< HEAD
 	background: url(assets/images/art/photo/IMG_5308.JPG) no-repeat center center;
-=======
-	background: url(assets/images/Art/Photography/IMG_5308.JPG) no-repeat center center;
->>>>>>> ddc76f6a0d7a3e7e9d6ae7ffce3a4fdb4e340eca
 	background-size: cover;
 }
 
 #photo-image5 {
-<<<<<<< HEAD
 	background: url(assets/images/art/photo/IMG_5313.JPG) no-repeat center center;
-=======
-	background: url(assets/images/Art/Photography/IMG_5313.JPG) no-repeat center center;
->>>>>>> ddc76f6a0d7a3e7e9d6ae7ffce3a4fdb4e340eca
 	background-size: cover;
 }
 
 #photo-image6 {
-<<<<<<< HEAD
 	background: url(assets/images/art/photo/IMG_5309.JPG) no-repeat center center;
-=======
-	background: url(assets/images/Art/Photography/IMG_5309.JPG) no-repeat center center;
->>>>>>> ddc76f6a0d7a3e7e9d6ae7ffce3a4fdb4e340eca
 	background-size: cover;
 }
 
 #photo-image7 {
-<<<<<<< HEAD
 	background: url(assets/images/art/photo/IMG_5307.JPG) no-repeat center center;
 	background-size: cover;
 }
@@ -284,9 +258,6 @@ a:active {
 }
 #photo-image9 {
 	background: url(assets/images/art/photo/IMG_5312.JPG) no-repeat center center;
-=======
-	background: url(assets/images/Art/Photography/IMG_5307.JPG) no-repeat center center;
->>>>>>> ddc76f6a0d7a3e7e9d6ae7ffce3a4fdb4e340eca
 	background-size: cover;
 }
 .fill {
