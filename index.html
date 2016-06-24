@@ -1,65 +1,70 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+		
+		<!-- Main CSS Style Sheet --> 
 		<link rel="stylesheet" type="text/css" href="main.css"/>
+
+		<!-- Google Font Script --> 
 		<link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
-		<title>
-		</title>
+		
+		<title>Emily Vo's Portfolio</title>
 		<meta charset="utf-8"/>
-		<script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js">
-		</script>
-		<script type="text/javascript" src="assets/scripts/scroll.js">
-		</script>
+
+		<!-- Load JQuery --> 
+		<script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+		
+		<!-- Script for User Interaction with divs --> 
+		<script type="text/javascript" src="assets/scripts/action.js"></script>
 	</head>
+
 	<body>
 		<div class="container">
-			<div class="header">
-				<h1>emily vo</h1>
-				<div class="navi"> 		
+
+			<!-- Header --> 
+			<h1>emily vo</h1>
+			<div class="navi"> 		
 				<div class="icon about-icon">about</div>
 				<div class="icon art-icon">art</div>
 				<div class="icon code-icon">code</div>
 				<div class="icon contact-icon">contact</div>
 			</div>
-
+			<!-- About Section --> 
 			<div class="section" id="about-section">
 				<h2>about</h2>
-				<div class="content" style="text-align:left">
+				<div class="content" id = "about-content-container">
 			 		<div id="about-content">
 			 			<h3> hi there </h3>
 				 			<p> I’m Emily, and I am an engineering student at the University of Pennsylvania. </p>
+			 			
 			 			<div>
-			 				<!--
-			 				<div style = "width: 50%; float: left; display: inline-block; background: url("../assets/images/ProfileImage.jpg") no-repeat center center fixed; background-size: cover; background-repeat: no-repeat;">
-			 				<img src="../assets/images/ProfileImage.jpg" style="width: 80%; height: 80%; float: center" align="left"> 
-			 				</div>
-			 				 -->
-			 				<div style = "width: 44%; padding: 10px; float: left; display: inline-block;">	
-				 			<!-- <h3> background </h3> -->
-				 			<p> I am currently a junior, who has done coursework in Computer Science, Art, Graphics Programming, and Electrical Engineering. I am interested in all technology that changes how we experience and share visual information, entertainment, and the arts. 
-							</p>
-							<p> 
-				 			In my free time, I pursue my passion for art and design, and find ways to incorporate it into my programming projects. If you're interested in my CS work, you can view the source at my github <a href="https://github.com/emily-vo" target="_blank">here</a>!
-				 			</p> 
+			 				<div id="background1">	
+					 			<p> I am currently a junior, who has done coursework in Computer Science, Art, Graphics Programming, and Electrical Engineering. I am interested in all technology that changes how we experience and share visual information, entertainment, and the arts. 
+								</p>
+								<p> 
+					 			In my free time, I pursue my passion for art and design, and find ways to incorporate it into my programming projects. If you're interested in my CS work, you can view the source at my github <a href="https://github.com/emily-vo" target="_blank">here</a>!
+					 			</p> 
 			 	    		</div>
-
-			 				<div style = "width: 44%; height: 100%; padding: 10px; float: left; display: inline-block">
+			 				<div id="background2">
 			 				<h3> i like </h3>
 				 			<ul>
 							 	<li>Graphics and Game Programming</li>
 							 	<li>Algorithms and Data Structures</li>
 							 	<li>Art and Design</li>
 							 	<li>Robotics</li>
+							 	<li>Web Development</li>
 						 	</ul>
 						 	<p> <br>I spent last summer as a Software Intern for Electronics R&D, at Siemens in Atlanta, GA, and am now a Software Intern at <a href="https://www.agi.com/" target="_blank">Analytical Graphics, Inc.</a> in Exton, PA.</p>	
 			 				</div>
 			 			</div>
-			 			<div style = "padding: 10px; float: left; display: inline-block">
+
+			 			<div id="website-by-me">
 				 			<p> I hope you enjoy my portfolio website - I wanted to make it from scratch to learn some web-dev!</p>
 				 		</div>
-				 		<div style = "padding: 5px"> 
-				 		<div class="small back-icon" style="float:right">back</div>
-				 		<div class="small art-icon" style="float:right">next</div>
+
+				 		<div id="about-nav"> 
+				 		<div class="small back-icon" id="about-back">back</div>
+				 		<div class="small art-icon" id ="about-next">next</div>
 				 		</div>
 			 		</div>
 				</div>
@@ -67,18 +72,18 @@
 
 			<div class="section" id = "art-section">
 				<h2>art</h2>
-				<div class="content" style="text-align:center" float="center">
+				<div class="content" id="art-content-container">
 					<h3>photo</h3>
 					<div class="slideshow" id = "photo-slideshow">
-	   					<div class = "fill" id="photo-image1"></div>
-	   					<div class = "fill" id="photo-image2"></div> 
-	   					<div class = "fill" id="photo-image3"></div> 
-	   					<div class = "fill" id="photo-image4"></div> 
-	   					<div class = "fill" id="photo-image5"></div> 
-	   					<div class = "fill" id="photo-image6"></div> 
-	   					<div class = "fill" id="photo-image7"></div>
-	   					<div class = "fill" id="photo-image8"></div>
-	   					<div class = "fill" id="photo-image9"></div>
+	   					<div class = "circle-slides" id="photo-image1"></div>
+	   					<div class = "circle-slides" id="photo-image2"></div> 
+	   					<div class = "circle-slides" id="photo-image3"></div> 
+	   					<div class = "circle-slides" id="photo-image4"></div> 
+	   					<div class = "circle-slides" id="photo-image5"></div> 
+	   					<div class = "circle-slides" id="photo-image6"></div> 
+	   					<div class = "circle-slides" id="photo-image7"></div>
+	   					<div class = "circle-slides" id="photo-image8"></div>
+	   					<div class = "circle-slides" id="photo-image9"></div>
 					</div>
 					<h3>modeling</h3>
 					<div class="slideshow" id = "modeling-slideshow">
@@ -89,9 +94,9 @@
 	   					<div class = "fill" id="studies-image1"></div>   					
 					</div>
 
-					<div style = "padding: 5px; width: 170px; float: right; text-align: right"> 
-						<div class="small back-icon" style="float:right; display:inline-block">back</div>
-				 		<div class="small code-icon" style="float:right; display:inline-block">next</div>
+					<div id="art-nav"> 
+						<div class="small back-icon" id="art-back">back</div>
+				 		<div class="small code-icon" id = "art-next">next</div>
 				 	</div> 
 				</div>
 				
@@ -101,6 +106,29 @@
 				<h2>code</h2>
 				<div class="content" float="center">
 					<p align="center">My source code for school projects exists on private repositories. If you want to see it, feel free to contact me!</p>
+					<div id = "cities-section">
+						<h3 align="center">Procedural Cities</h3>
+						<div id="procedural-cities"> 
+						<p> This is an independent WebGL project that dynamically generates cities.</p> 
+							<div id="align-icon">
+								<div id="procedural-cities-icon">
+									coming soon
+								</div>
+							</div>
+							<p><b>Role:</b>
+								<ul>
+									 <li>Co-Developer
+								 </ul> 
+							</p>
+							<p><b>Features Implemented:</b> 
+								<ul>
+									 <li>Texture Mapping</li>
+									 <li>Procedural Generation</li>
+									 <li>Animation Synced to Music</li>
+								 </ul>
+							</p>
+						</div>
+					</div>
 					<div id = "minecraft-section" style="padding-top: 20px">
 						<h3 align="center">Mini Minecraft</h3>
 						<div id="mini-minecraft" style="text-align: left"> 
@@ -127,7 +155,7 @@
 						<h3 align="center">Wikipedia Search Engine</h3>
 						<div id="search-engine" style = "text-align: left">
 							<p>
-								This was a final project to exercise fundamental Graph Theory concepts and algorithms taught in my first Algorithms and Data Strucures class. The task at hand was to create a graph of Simple Wikipedia's pages and their outbound links, on which we performed various graph algorithms to observe various real-world applications, such as page rank, centrality, and connected components, and search ranking.
+								This was a final project to exercise fundamental Graph Theory concepts and algorithms taught in my first Algorithms and Data Strucures class in Spring 2016. The task at hand was to create a graph of Simple Wikipedia's pages and their outbound links, on which we performed various graph algorithms to observe various real-world applications, such as page rank, centrality, and connected components, and search ranking.
 							</p>
 
 							<p><b>Role:</b>
@@ -144,6 +172,7 @@
 							</p>
 						</div>
 					</div>
+
 					<div style = "padding: 5px; width: 170px; float: right; text-align: right"> 
 						<div class="small back-icon" style="float:right; display:inline-block">back</div>
 				 		<div class="small code-icon" style="float:right; display:inline-block">next</div>
@@ -163,7 +192,6 @@
 					<div class = "small" align = "center"><a href= "">linkedin</a></div>
 				</div>
 			</div>
-
 		</div>	
 	</body>
 </html>

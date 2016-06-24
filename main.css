@@ -16,18 +16,7 @@ body {
 	src: url('assets/fonts/OraterStd.otf');
 }
 
-#about-content {
-	float: left;
-}
-
 .container {
-	margin: 0 auto;
-	float: left;
-	width: 100%;
-    height: 100%;
-    text-align: center;
-}
-.header {
 	float: left;
 	margin: 0 auto;
 	width: 100%;
@@ -61,71 +50,56 @@ h2 {
 	padding-bottom: 100vh;
 }
 .icon {
-	margin-right: 5px;
+	float: center;
 	display:inline-block;
+	margin-right: 5px;
+	
+	
 	height: 150px;
 	width: 150px;
 	line-height:150px;
-	border-radius: 50%;
+	
+	color: #ffffff;
+	font-size: 150%;
 	text-shadow: 1px 1px #000000;
 	text-align:center;
-	color: #ffffff;
+
+	border-radius: 50%;
 	border: 7px solid #ffffff;
-	font-size: 150%;
-	float: center;
-	cursor: pointer; cursor: hand; 
-	/*
-	background-position: center;
-	background-size: 150px 150px; */
-}
-.back-icon {
+
 	cursor: pointer; cursor: hand; 
 }
 .icon:hover {
-	display:inline-block;
-	height: 150px;
-	width: 150px;
-	line-height:150px;
-	border-radius: 50%;
-	text-shadow: 1px 1px #000000;
 	background-color: rgba(0, 0, 0, 0.6);
-	text-align:center;
-	 border: 7px solid #ffffff;
-	color: #ffffff;
-	font-size: 150%;
-	float: center;
 	cursor: pointer; cursor: hand; 
-	/*
-	background-position: center;
-	background-size: 150px 150px; */
 }
+
+.back-icon {
+	cursor: pointer; cursor: hand; 
+}
+
+/* Class for next icons */
 .small {
 	display: inline-block; 
+	right-padding: 10px;
+
 	width: 75px; 
 	height: 75px; 
 	line-height:75px; 
+	
 	font-size: 100%;
-	border-radius: 50%; 
 	text-shadow: 1px 1px #000000;
 	text-align: center;
 	color: #ffffff; 
+	
+	border-radius: 50%; 
 	border: 5px solid #ffffff; 
-	right-padding: 10px;
 }
 .small:hover {
-	display: inline-block; 
-	width: 75px; 
-	height: 75px; 
-	line-height:75px; 
-	font-size: 100%;
-	border-radius: 50%; 
-	text-shadow: 1px 1px #000000;
-	text-align: center;
-	color: #ffffff; 
-	border: 5px solid #ffffff; 
-	right-padding: 10px;
-	background-color: rgba(1, 1, 1, 0.2);
+	background-color: rgba(0, 0, 0, 1);
+	cursor: pointer; cursor: hand; 
 }
+
 .section {
 	float: left;
 	text-align: center;
@@ -137,14 +111,62 @@ h2 {
 
 .content {
 	font-size: 16pt;
+	
+	display: inline-block; 
+	margin: 0 auto; 
+	float: center;
+
 	padding-left: 25%;
 	padding-right: 25%;
 	padding-bottom: 15%;
+
 	width: 555.5px;
-	display: inline-block; margin: 0 auto; float: center
-	
+}
+#about-content, #about-content-container {
+	text-align: left;
 }
 
+#background1 {
+	width: 44%; 
+	padding: 10px; 
+	float: left; 
+	display: inline-block;
+	text-align: left;
+}
+
+#background2 {
+	width: 44%; 
+	height: 100%; 
+	padding: 10px; 
+	float: left; 
+	display: inline-block;
+	text-align: left;
+}
+#website-by-me {
+	padding: 10px; 
+	float: left; 
+	display: inline-block;
+}
+
+#about-nav, #art-nav {
+	padding: 5px; 
+	width: 170px; 
+	float: right; 
+	text-align: right;
+}
+#about-back, #about-next {
+	float:right;
+}
+
+#art-content-container {
+	text-align: center;
+	float: center;
+}
+
+#art-back, #art-next {
+	float: right; 
+	display: inline-block;
+}
 /* unvisited link */
 a:link {
     color: rgba(100, 100, 255, 1);
@@ -168,16 +190,17 @@ a:active {
     color: rgba(100, 100, 255, 1);
     cursor: pointer; cursor: hand; 
 }
+
+/* Slideshow styling */
 #photo-slideshow { 
-    /*margin: 50px auto; */
     position: relative; 
     padding: 1px; 
-    /*box-shadow: 0 0 20px rgba(0,0,0,0.4); */
     width: 100%;
     padding-bottom: 100%; 
     float: left;
 }
 
+/* Selects children of slideshow div, aka. image slides */
 #photo-slideshow > div { 
     position: absolute; 
     top: 10px; 
@@ -185,16 +208,16 @@ a:active {
     right: 10px; 
     bottom: 10px; 
 }
+
 #modeling-slideshow { 
-    /*margin: 50px auto; */
     position: relative; 
     padding: 1px; 
-    /*box-shadow: 0 0 20px rgba(0,0,0,0.4); */
     padding-bottom: 100%; 
     width: 100%; 
     float: left;
 }
 
+/* Selects children of slideshow div, aka. image slides */
 #modeling-slideshow > div { 
     position: absolute; 
     top: 10px; 
@@ -204,15 +227,14 @@ a:active {
 }
 
 #studies-slideshow { 
-    /*margin: 50px auto; */
     position: relative; 
     padding: 1px; 
-    /*box-shadow: 0 0 20px rgba(0,0,0,0.4); */
     padding-bottom: 100%; 
     width: 100%; 
     float: left;
 }
 
+/* Selects children of slideshow div, aka. image slides */
 #studies-slideshow > div { 
     position: absolute; 
     top: 10px; 
@@ -220,6 +242,13 @@ a:active {
     right: 10px; 
     bottom: 10px; 
 }
+
+/* Turns slide class into circles */
+.circle-slides {
+	border-radius: 50%;
+}
+
+/* Photo slides */
 #photo-image1 {
 	background: url(assets/images/art/photo/IMG_3936.JPG) no-repeat center center;
 	background-size: cover;
@@ -260,8 +289,23 @@ a:active {
 	background: url(assets/images/art/photo/IMG_5312.JPG) no-repeat center center;
 	background-size: cover;
 }
-.fill {
-	border-radius: 50%;
-}
 
+#cities-section {
+	padding-top: 20px;
+}
+#procedural-cities {
+	text-align: left;
+}
+#align-icon {
+	text-align: center;
+}
+#procedural-cities-icon {
+	display: inline-block;
+	width: 200px; 
+	height: 200px; 
+	line-height: 200px; 
+	border-radius: 50%; 
+	border: 7px solid #ffffff; 
+	text-align: center;
+}
 
