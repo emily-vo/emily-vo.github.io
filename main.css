@@ -374,6 +374,10 @@ a:active {
 	background: url(assets/images/art/design/Coffeehouse.png) no-repeat center center;
 	background-size: cover;
 }
+#design-image4 {
+	background: url(assets/images/art/design/headdress.png) no-repeat center center;
+	background-size: cover;
+}
 
 #cities-section {
 	padding-top: 20px;
