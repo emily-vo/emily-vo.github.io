@@ -304,6 +304,61 @@ a:active {
 	background-size: cover;
 }
 
+#studies-image1 {
+	background: url(assets/images/art/studies/beyonce.png) no-repeat center center;
+	background-size: cover;
+}
+
+#studies-image2 {
+	background: url(assets/images/art/studies/5point.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#studies-image3 {
+	background: url(assets/images/art/studies/city.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#studies-image4 {
+	background: url(assets/images/art/studies/head.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#studies-image5 {
+	background: url(assets/images/art/studies/heads.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#studies-image6 {
+	background: url(assets/images/art/studies/lightbulb.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#studies-image7 {
+	background: url(assets/images/art/studies/paris.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#studies-image8 {
+	background: url(assets/images/art/studies/philly.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#design-image1 {
+	background: url(assets/images/art/design/swirl.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#design-image2 {
+	background: url(assets/images/art/design/FlyerFront.png) no-repeat center center;
+	background-size: cover;
+}
+
+#design-image3 {
+	background: url(assets/images/art/design/Coffeehouse.png) no-repeat center center;
+	background-size: cover;
+}
+
 #cities-section {
 	padding-top: 20px;
 }
