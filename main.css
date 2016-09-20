@@ -294,6 +294,16 @@ a:active {
 	background-size: cover;
 }
 
+#model-image1 {
+	background: url(assets/images/art/models/zbrush_woman_bust.png) no-repeat center center;
+	background-size: cover;
+}
+
+#model-image2 {
+	background: url(assets/images/art/models/lowpolyelephant.jpg) no-repeat center center;
+	background-size: cover;
+}
+
 #cities-section {
 	padding-top: 20px;
 }
