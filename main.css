@@ -26,7 +26,7 @@ body {
 	width: 100%;
 	text-align: center;
 	/* Main page background image */
-	background: url("assets/images/art/photo/IMG_4703.JPG") no-repeat center center fixed;
+	background: url("assets/images/background.JPG") no-repeat center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
     text-shadow: 2px 2px #000000;
