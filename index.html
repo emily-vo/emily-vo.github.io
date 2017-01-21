@@ -16,7 +16,40 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-loading">
+		<script src="js/threejs/build/three.js"></script>
+		<script>
+			var canvasWidth = window.innerWidth;
+			var canvasHeight = 4000;
+			var scene = new THREE.Scene();
+			var camera = new THREE.PerspectiveCamera( 75, canvasWidth/canvasHeight, 0.1, 1000 );
 
+			var renderer = new THREE.WebGLRenderer();
+			renderer.setSize( canvasWidth, canvasHeight );
+			renderer.setClearColor( 0xffffff, 1);
+			document.body.appendChild( renderer.domElement );
+			renderer.domElement.style.position = 'absolute';
+
+			var geometry = new THREE.IcosahedronBufferGeometry(0.25, 0)
+			var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } ); 
+			// add line basic material
+			// add phone basic material
+			var cube = new THREE.Mesh( geometry, material );
+			scene.add( cube );
+			cube.position.y = 2.5;
+			cube.position.x = 0.5;
+			camera.position.z = 5;
+
+			var render = function () {
+				requestAnimationFrame( render );
+
+				cube.rotation.x += 0.01;
+				cube.rotation.y += 0.01;
+
+				renderer.render(scene, camera);
+			};
+
+			render();
+		</script>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -24,46 +57,18 @@
 					<section id="main">
 						<header>
 							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
-							<h1>Jane Doe</h1>
-							<p>Senior Psychonautics Engineer</p>
+							<h1>Emily Vo</h1>
+							<p>Developer. Designer.</p>
 						</header>
-						<!--
 						<hr />
-						<h2>Extra Stuff!</h2>
-						<form method="post" action="#">
-							<div class="field">
-								<input type="text" name="name" id="name" placeholder="Name" />
-							</div>
-							<div class="field">
-								<input type="email" name="email" id="email" placeholder="Email" />
-							</div>
-							<div class="field">
-								<div class="select-wrapper">
-									<select name="department" id="department">
-										<option value="">Department</option>
-										<option value="sales">Sales</option>
-										<option value="tech">Tech Support</option>
-										<option value="null">/dev/null</option>
-									</select>
-								</div>
-							</div>
-							<div class="field">
-								<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-							</div>
-							<div class="field">
-								<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
-							</div>
-							<div class="field">
-								<label>But are you a robot?</label>
-								<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
-								<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
-							</div>
-							<ul class="actions">
-								<li><a href="#" class="button">Get Started</a></li>
-							</ul>
-						</form>
+							<h3> hi there. </h3>
+				 			<p> I’m Emily, and I am a Computer Science student at the University of Pennsylvania. </p>
+					 		<p> I am currently a junior, who has done coursework in Computer Science, Art, Graphics Programming. I love to work with smart people on hard problems, and am interested in all technology that changes how we experience and share visual information, entertainment, and the arts. 
+							</p>
+							<p> 
+					 		In my free time, I pursue my passion for art and design, and find ways to incorporate it into my programming projects. If you're interested in my CS work, you can view the source at my github <a href="https://github.com/emily-vo" target="_blank">here</a>!
+					 		</p> 
 						<hr />
-						-->
 						<footer>
 							<ul class="icons">
 								<li><a href="#" class="fa-twitter">Twitter</a></li>
