@@ -57,17 +57,19 @@
 		 	for (var x = -2.5; x < 5; x += 1.0) {
 		 		for (var y = 0; y < 10; y += 1.5) {
 		 			for (var z = -7.5; z < -5; z += 4) {
-		 				var geometry = new THREE.IcosahedronGeometry( Math.random()*.40 + .1, 0);
-						meshes[i] = new THREE.Mesh( geometry, flatMat );
-						var geo = new THREE.EdgesGeometry( meshes[i].geometry ); // or WireframeGeometry
-						var wireframe = new THREE.LineSegments( geo, lineMat );
-						meshes[i].add(wireframe);
-						meshes[i].position.x = x;
-						meshes[i].position.y = y;
-						meshes[i].position.z = Math.random();
-						rotVel[i] = new THREE.Vector3(Math.random() / range - 1/range/2, Math.random() / 	range	- 1/range/2, Math.random() / range - 1/range/2);
-						scene.add( meshes[i]);
-						i++;
+		 				if (Math.random() < 0.8) {
+		 					var geometry = new THREE.IcosahedronGeometry( Math.random()*.40 + .1, 0);
+							meshes[i] = new THREE.Mesh( geometry, flatMat );
+							var geo = new THREE.EdgesGeometry( meshes[i].geometry ); // or 	WireframeGeometry
+							var wireframe = new THREE.LineSegments( geo, lineMat );
+							meshes[i].add(wireframe);
+							meshes[i].position.x = x + 2*random() - 0.5;
+							meshes[i].position.y = y + 2*random() - 0.5;
+							meshes[i].position.z = Math.random();
+							rotVel[i] = new THREE.Vector3(Math.random() / range - 1/range/2, Math.random()	 / 	range	- 1/range/2, Math.random() / range - 1/range/2);
+							scene.add( meshes[i]);
+							i++;
+		 				}
 					}
 		 		}	
 			}
