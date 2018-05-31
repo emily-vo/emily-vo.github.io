@@ -11,154 +11,64 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-loading">
 		<script src="js/threejs/build/three.js"></script>
-		<script>
-			function random(x) {
-    			x = (x << 13) ^ x;
-    			return (1.0 - (x * (x * x * 15731 + 789221) + 1376312589) & 0x7fffffff) / 10737731824;
-			}
-			var canvasWidth = window.innerWidth;
-			var canvasHeight = 5000;
-			var scene = new THREE.Scene();
-			var camera = new THREE.PerspectiveCamera( 75, canvasWidth/canvasHeight, 0.1, 1000 );
-
-			var renderer = new THREE.WebGLRenderer();
-			renderer.setSize( canvasWidth, canvasHeight );
-			renderer.setClearColor( 0xffffff, 1);
-			document.body.appendChild( renderer.domElement );
-			renderer.domElement.style.position = 'absolute';
-			var lights = [];
-			lights[ 0 ] = new THREE.PointLight( 0xffffff, 1, 0 );
-			lights[ 1 ] = new THREE.PointLight( 0xffffff, 1, 0 );
-			lights[ 2 ] = new THREE.PointLight( 0xffffff, 1, 0 );
-
-			lights[ 0 ].position.set( 0, 200, 0 );
-			lights[ 1 ].position.set( 100, 0, 100 );
-			lights[ 1 ].position.set( -100, -100, 100 );
-			//lights[ 2 ].position.set( - 100, - 200, - 100 );
-
-			scene.add( lights[ 0 ] );
-			scene.add( lights[ 1 ] );
-			scene.add( lights[ 2 ] );
-
-
-			var rotVel = [];
-			var meshes = [];
-			var flatMat = new THREE.MeshPhongMaterial( { color: 0xedeff2, polygonOffset: true, polygonOffsetFactor: 1, polygonOffsetUnits: 1});
-			flatMat.shading = THREE.FlatShading;
-			var lineMat = new THREE.LineBasicMaterial( { color: 0x5c5d5e, linewidth: 2 } );
-			var range = 100;
-			var i = 0;
-		 	for (var x = -2.5; x < 5; x += 1.0) {
-		 		for (var y = 0; y < 10; y += 1.5) {
-		 			for (var z = -7.5; z < -5; z += 4) {
-		 				if (Math.random() < 0.8) {
-		 					var geometry = new THREE.IcosahedronGeometry( Math.random()*.40 + .1, 0);
-							meshes[i] = new THREE.Mesh( geometry, flatMat );
-							var geo = new THREE.EdgesGeometry( meshes[i].geometry ); // or 	WireframeGeometry
-							var wireframe = new THREE.LineSegments( geo, lineMat );
-							meshes[i].add(wireframe);
-							meshes[i].position.x = x + 2*random() - 0.5;
-							meshes[i].position.y = y + 2*random() - 0.5;
-							meshes[i].position.z = Math.random();
-							rotVel[i] = new THREE.Vector3(Math.random() / range - 1/range/2, Math.random()	 / 	range	- 1/range/2, Math.random() / range - 1/range/2);
-							scene.add( meshes[i]);
-							i++;
-		 				}
-					}
-		 		}	
-			}
-			
-			
-
-			camera.position.z = 10;
-
-			var render = function () {
-				for (var i = 0; i < meshes.length; i++) {
-					meshes[i].rotation.x += rotVel[i].x;
-					meshes[i].rotation.y += rotVel[i].y;
-					meshes[i].rotation.z += rotVel[i].z;
-				}
-				requestAnimationFrame( render );
-
-				renderer.render(scene, camera);
-			};
-
-			render();
-		</script>
+		<script src="polys-three.js"></script>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Main -->
 					<section id="main">
 						<header>
-							<span class="avatar"><img src="./images/face.png" alt="" /></span>
+							<span class="avatar"><a href="index.html"><img src="./images/face.png" alt="" /></a></span>
 							<h1>Emily Vo</h1>
-							<p>Developer. Artist.</p>
+							<p>Computer Graphics Developer. Artist. </p>
 						</header>
 						<footer>
 							<ul class="icons">
 								<li><a href="http://www.github.com/emily-vo" class="fa-github">Github</a></li>
 								<li><a href="mailto:emvo@seas.upenn.edu" class="fa-envelope">Email</a></li>
-								<li><a href="http://emily-vo.github.io/assets/Resume - December 2016.pdf" class="fa-file">CV</a></li>
+								<li><a href="http://emily-vo.github.io/assets/resume.pdf" class="fa-file">CV</a></li>
 								<li><a href="http://linkedin.com/in/emilyvo" class="fa-linkedin-square">LinkedIn</a></li>
 							</ul>
 						</footer>
 						<hr />
-							<h1> hi </h1>
-				 			<p> I’m Emily, and I am an undergraduate engineering student studying Digital Media Design at the University of Pennsylvania. I am also purusing a masters in Computer Graphics and Gaming Technology.</p>
+							<h1> hi, i'm emily </h1>
+				 			<p> I studied Digital Media Design at the University of Pennsylvania, a interdisciplinary degree in computer science, the arts, and computer graphics. I'm currently pursuing a masters in Computer Graphics and Gaming Technology and am working on a thesis in physically based animation. </p>
 					 		<p> I believe code to be the best artistic medium out there. I'm also interested in all technology that changes how we experience and share visual information, entertainment, and the arts.
 							</p>
+							<ul>
+								<li style="display:inline-block;display:inline;"><a href="https://vimeo.com/239528418"><div class="small">reel</div></a></li>
+								<li style="display:inline-block;display:inline;"><a href="code.html"><div class="small">code</div></a></li>
+								<li style="display:inline-block;display:inline;"><a href="art.html"><div class="small">art</div></a></li>
+							</ul>
 						<hr />
 							<h1> i like </h1>
-							<p> art, phys based rendering, games and animation, virtual reality,  webgl
+							<ul>
+								<li> drawing, painting, and printmaking </li>
+								<li> phys based animation </li>
+								<li> phys based rendering </li>
+								<li> procedural art </li>
+								<li> video games, anime, and animated films </li>
+							</ul>
+						<hr />
+						
+						<!--
 						<hr />
 							<h1> demo reel </h1>
 								<a href="https://vimeo.com/239528418" target="_blank"> <div class="avatar"><img src="./images/DemoReel.png" alt=""/>
 						<hr />
 							<h1> code </h1>
-							<p> click the icons for live demos or videos of specific projects. </p>
-							<div style="">
-								<a href="http://www.emilyhvo.com/Procedural-Cityscapes/" target="_blank"> <div class="avatar"><img src="./images/cities.png" alt=""/></div>
-								<p style="font-size: 150%"> Cityscapes </p> </a>
-								<p> Features Implemented: </p>
-								<p> Shape Grammars, Procedural City Planning Using Multi-Octave Noise, Noise-Based Height, Height-Based coloring </p>
-
-								<a href="http://www.emilyhvo.com/Sakura/" target="_blank"> <div class="avatar"><img src="./images/lsystem.png" alt=""/></div>
-								<p style="font-size: 150%"> Sakura </p> </a>
-								<p> Features Implemented: </p>
-								<p> LSystem Parser, Turtle Renderer, Interactive LSystem Control </p>
-
-								<a href="http://www.emilyhvo.com/Avian/" target="_blank"> <div class="avatar"><img src="./images/wing.png" alt=""/></div>
-								<p style="font-size: 150%"> Avian </p> </a>
-								<p> Features Implemented: </p>
-								<p> Toolbox functions for procedural wing creation, Animation </p>
-
-								<a href="http://www.emilyhvo.com/Project1-Noise/" target="_blank"> <div class="avatar"><img src="./images/noise.png" alt=""/></div>
-								<p style="font-size: 150%"> noise </p> </a>
-								<p> Features Implemented: </p>
-								<p> Multi-Octave Noise, Vertex Shader Mesh Deformation, Texturing Mapping </p>
-
-								<a href="https://devpost.com/software/colovr" target="_blank"> <div class="avatar"><img src="./images/colorvr.png" alt=""/></div>
-								<p style="font-size: 150%"> colorvr </p> </a>
-								<p> Features Implemented: </p>
-								<p> Raytracing Interaction, Vertex Coloring, UI Design, 3D Modeling </p>
-								
-								<a href="https://www.youtube.com/watch?v=xSOeaph5jOE" target="_blank"> <div class="avatar"><img src="./images/minecraft.png" alt=""> </div>
-								<p style="font-size: 150%">mini-minecraft </p></a>
-								<p> Features Implemented: </p>
-								<p> Physics, Raytracing Interaction, Octree Acceleration Structure, Procedural Weather </p>
-							</div>
+							<a href="code.html" target="_blank"> <div class="avatar"><img src="./images/DemoReel.png" alt=""/>
 						<hr />
 							<h1> art </h1>
-							<p> coming soon
-						<hr />
-						
+							<a href="art.html" target="_blank"> <div class="avatar"><img src="./images/DemoReel.png" alt=""/>
+						-->
 					</section>
 			</div>
 

@@ -130,7 +130,7 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: #414f57;
+		color: #000000;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 14pt;
 		font-weight: 300;
@@ -472,7 +472,7 @@
 		}
 
 /* List */
-
+/*
 	ol {
 		list-style: decimal;
 		margin: 0 0 1.5em 0;
@@ -508,7 +508,23 @@
 					padding-top: 0;
 				}
 
-		ul.icons {
+		
+
+	dl {
+		margin: 0 0 1.5em 0;
+	}
+
+		dl dt {
+			display: block;
+			margin: 0 0 0.75em 0;
+		}
+
+		dl dd {
+			margin-left: 1.5em;
+		}
+*/
+
+ul.icons {
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
@@ -592,20 +608,6 @@
 				ul.actions li:last-child {
 					padding-right: 0;
 				}
-
-	dl {
-		margin: 0 0 1.5em 0;
-	}
-
-		dl dt {
-			display: block;
-			margin: 0 0 0.75em 0;
-		}
-
-		dl dd {
-			margin-left: 1.5em;
-		}
-
 /* Button */
 
 	input[type="submit"],
