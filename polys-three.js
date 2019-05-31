@@ -43,12 +43,14 @@ function populate() {
 	var lineMat = new THREE.LineBasicMaterial( { color: 0x5c5d5e, linewidth: 2 } );
 	var range = 100;
 	var heightRange = 20;
+	var xRange = 5;
+	var scale = 0.2;
 	var i = 0;
- 	for (var x = -2.5; x < 5; x += 1.0) {
+ 	for (var x = -xRange; x < xRange; x += scale * 3) {
  		for (var y = -heightRange; y < heightRange; y += 1.5) {
  			for (var z = -7.5; z < -5; z += 4) {
  				if (Math.random() < 0.8) {
- 					var geometry = new THREE.IcosahedronGeometry( Math.random()*.40 + .1, 0);
+ 					var geometry = new THREE.IcosahedronGeometry( Math.random()*scale + .1, 0);
 					meshes[i] = new THREE.Mesh( geometry, flatMat );
 					var geo = new THREE.EdgesGeometry( meshes[i].geometry ); // or 	WireframeGeometry
 					var wireframe = new THREE.LineSegments( geo, lineMat );
