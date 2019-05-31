@@ -2,8 +2,16 @@ function random(x) {
     			x = (x << 13) ^ x;
     			return (1.0 - (x * (x * x * 15731 + 789221) + 1376312589) & 0x7fffffff) / 10737731824;
 			}
-			var canvasWidth = window.innerWidth;
-			var canvasHeight = 5000;
+			
+			var body = document.body;
+    		var html = document.documentElement;
+    		var canvasWidth = window.innerWidth;
+			var height = Math.max(body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight); 
+
+			var canvasHeight = window.innerWidth * 5;
+
+			console.log(canvasHeight);
 			var scene = new THREE.Scene();
 			var camera = new THREE.PerspectiveCamera( 75, canvasWidth/canvasHeight, 0.1, 1000 );
 
@@ -33,9 +41,10 @@ function random(x) {
 			flatMat.shading = THREE.FlatShading;
 			var lineMat = new THREE.LineBasicMaterial( { color: 0x5c5d5e, linewidth: 2 } );
 			var range = 100;
+			var heightRange = 20;
 			var i = 0;
 		 	for (var x = -2.5; x < 5; x += 1.0) {
-		 		for (var y = 0; y < 10; y += 1.5) {
+		 		for (var y = -heightRange; y < heightRange; y += 1.5) {
 		 			for (var z = -7.5; z < -5; z += 4) {
 		 				if (Math.random() < 0.8) {
 		 					var geometry = new THREE.IcosahedronGeometry( Math.random()*.40 + .1, 0);
