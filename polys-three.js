@@ -12,7 +12,7 @@ function populate() {
 	var scene = new THREE.Scene();
 	var camera = new THREE.PerspectiveCamera( 75, canvasWidth/canvasHeight, 0.1, 1000 );
 
-	var renderer = new THREE.WebGLRenderer();
+	var renderer = new THREE.WebGLRenderer( {antialias: true});
 	renderer.setSize( canvasWidth, canvasHeight );
 	renderer.setClearColor( 0xffffff, 1);
 	renderer.domElement.setAttribute("id", "polys");
