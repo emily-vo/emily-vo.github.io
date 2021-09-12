@@ -59,7 +59,7 @@ function populate() {
 					meshes[i].position.y = y + 3*Math.random() - 0.5;
 					meshes[i].position.z = Math.random();
 					rotVel[i] = new THREE.Vector3(Math.random() / range - 1/range/2, Math.random()	 / 	range	- 1/range/2, Math.random() / range - 1/range/2);
-					scene.add( meshes[i]);
+					//scene.add( meshes[i]);
 					i++;
  				}
 			}
